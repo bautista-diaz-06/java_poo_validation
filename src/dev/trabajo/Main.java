@@ -9,6 +9,8 @@ public class Main {
         Cliente cliente = new Cliente("Pepito", "Dupuy", "123456789", "Calle piso");
         System.out.println("ID Cliente: " + cliente.getId());
         System.out.println(cliente.toString());
+        System.out.println(cliente.obtenerTipo());
+        cliente.obtenerRol();
 
         Empleado empleado = new Empleado("Bautista", "Díaz", "45896321", "Calle 1456", 3500.0);
         System.out.println("ID Empleado: " + empleado.getEmpleadoId());
@@ -16,6 +18,8 @@ public class Main {
         System.out.println("Remuneracion: " + empleado.getRemuneracion());
         empleado.aumentarRemuneracion(3500);
         System.out.println("Nueva remuneracion: " + empleado.getRemuneracion());
+        System.out.println(empleado.obtenerTipo());
+        empleado.obtenerRol();
 
         Gerente gerente = new Gerente("Alberto", "Dupuy", "789456123", "Calle 404", 2500.0, 15000.0);
         System.out.println(gerente.toString());
@@ -24,5 +28,7 @@ public class Main {
         gerente.setPresupuesto(5000.0);
         System.out.println("Nueva remuneracion: " + gerente.getRemuneracion());
         System.out.println("Nuevo presupuesto: " + gerente.getPresupuesto());
+        System.out.println(gerente.obtenerTipo());
+        gerente.obtenerRol();
     }
 }

@@ -35,4 +35,14 @@ public class Empleado extends Persona {
                 ", dni='" + dni + '\'' +
                 ", direccion='" + direccion + '\'';
     }
+
+    @Override
+    public String obtenerTipo() {
+        return "Empleado";
+    }
+
+    @Override
+    public String obtenerRol() {
+        return "El empleado trabaja en el area que le corresponde";
+    }
 }

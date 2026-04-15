@@ -24,4 +24,14 @@ public class Cliente extends Persona {
                 ", dni='" + dni + '\'' +
                 ", direccion='" + direccion + '\'';
     }
+
+    @Override
+    public String obtenerTipo() {
+        return "Cliente";
+    }
+
+    @Override
+    public String obtenerRol() {
+        return "El cliente compra";
+    }
 }

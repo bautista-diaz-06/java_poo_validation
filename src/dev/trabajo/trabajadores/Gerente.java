@@ -27,4 +27,14 @@ public class Gerente extends Empleado{
                 ", remuneracion=" + remuneracion +
                 ", empleadoId=" + empleadoId;
     }
+
+    @Override
+    public String obtenerTipo() {
+        return "Gerente";
+    }
+
+    @Override
+    public String obtenerRol() {
+        return "El gerente supervisa el trabajo y que se cumplan las consignas";
+    }
 }
